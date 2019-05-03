@@ -3,7 +3,7 @@
 .signupButtons(@backgroundcolor; @color;){
     display: flex;
     width: 9.5rem;
-    height: 3rem;
+    height: 3.5rem;
     background: @backgroundcolor;
     font-size: 1.8rem;
     color: @color;
@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
 }
 
 .mobileSignupButton(@backgroundColor; @color;){
@@ -27,4 +28,16 @@
     justify-content: center;
     cursor: pointer;
     margin-bottom: 1.75rem;
+}
+@keyframes textColorChange {
+    0%   {color: purple;}
+    25%  {color: blue;}
+    50%  {color: aqua;}
+    100% {color: lime;}
+  }
+
+.textColorAnimation{
+    animation-name: textColorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }

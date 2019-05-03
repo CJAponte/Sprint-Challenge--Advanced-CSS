@@ -1,3 +1,22 @@
+@keyframes textColorChange {
+  0% {
+    color: purple;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: aqua;
+  }
+  100% {
+    color: lime;
+  }
+}
+.textColorAnimation {
+  animation-name: textColorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,16 +181,21 @@ p {
 }
 .navigationBarContainer {
   display: inline-flex;
+  position: fixed;
   flex-direction: column;
   width: 100%;
   height: 11rem;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.75);
   justify-content: space-around;
   border: 1px solid #F1F1F1;
+  z-index: 1;
 }
 .navigationBarContainer h1 {
   font-size: 5rem;
   margin: 0px auto;
+  animation-name: textColorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .navigationBarContainer .navigationBar {
   margin: 0px auto;
@@ -196,6 +220,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  position: relative;
+  top: 11rem;
 }
 .home .intro h2 {
   padding: 15px;
@@ -259,7 +287,7 @@ footer {
 .home .walk .walk-text .btn {
   display: flex;
   width: 9.5rem;
-  height: 3rem;
+  height: 3.5rem;
   background: #22283A;
   font-size: 1.8rem;
   color: #F1F1F1;
@@ -288,10 +316,10 @@ footer {
 .home .walk .walk-text .btn:hover {
   display: flex;
   width: 9.5rem;
-  height: 3rem;
-  background: #F6F6F6;
+  height: 3.5rem;
+  background: #F1F1F1;
   font-size: 1.8rem;
-  color: #5E6164;
+  color: #22283A;
   border-radius: 5px;
   text-align: center;
   align-items: center;

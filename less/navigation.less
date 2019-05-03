@@ -2,15 +2,18 @@
 
 .navigationBarContainer{
     display: inline-flex;
+    position: fixed;
     flex-direction: column;
     width: 100%;
     height: 11rem;
     background: @nav-bg;
     justify-content: space-around;
     border: 1px solid @nav-border;
+    z-index: +1;
     h1{
         font-size: 5rem;
         margin: 0px auto;
+        .textColorAnimation;
     }
 
     .navigationBar{
