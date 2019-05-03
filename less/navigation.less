@@ -1,1 +1,26 @@
 // Navigation code here
+
+.navigationBarContainer{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 11rem;
+    background: @nav-bg;
+    justify-content: space-around;
+    border: 1px solid @nav-border;
+    h1{
+        font-size: 5rem;
+        margin: 0px auto;
+    }
+
+    .navigationBar{
+        margin: 0px auto;
+
+        a{
+            text-decoration: none;
+            margin: 0px 2rem;
+            font-size: 1.75rem;
+            color: @nav-font
+        }
+    }
+}
