@@ -256,6 +256,49 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: flex;
+  width: 9.5rem;
+  height: 3rem;
+  background: #22283A;
+  font-size: 1.8rem;
+  color: #F1F1F1;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    background: #22283A;
+    color: #F1F1F1;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1.75rem;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  display: flex;
+  width: 9.5rem;
+  height: 3rem;
+  background: #F6F6F6;
+  font-size: 1.8rem;
+  color: #5E6164;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #F1F1F1;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -288,7 +331,7 @@ footer {
 @media (max-width: 500px) {
   #homePageHeaderIMG {
     max-width: 500px;
-    height: 15rem;
+    height: 11.5rem;
     background-size: cover;
   }
 }
