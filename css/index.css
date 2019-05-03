@@ -209,6 +209,7 @@ p {
 @media (max-width: 500px) {
   .navigationBarContainer {
     max-width: 500px;
+    position: relative;
   }
 }
 footer {
@@ -224,6 +225,11 @@ footer {
 .home {
   position: relative;
   top: 11rem;
+}
+@media (max-width: 500px) {
+  .home {
+    top: 0rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;
